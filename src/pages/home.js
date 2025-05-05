@@ -19,7 +19,7 @@ const Home = () => {
 
         {/* <Stats /> */}
 
-        {/* <Team /> */}
+        <Team />
 
         <Footer />
 
