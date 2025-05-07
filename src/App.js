@@ -18,6 +18,13 @@ function App() {
     return agreed !== "true";
   });
 
+  const handleDisagree = () => {
+    // Optional: You can redirect them or just leave the site
+    alert("You must accept the disclaimer to proceed.");
+    // For example, redirect to /disclaimer or close the tab
+    window.location.href = "/disclaimer"; // or you can use navigate("/disclaimer")
+  };
+
   const handleAgree = () => {
     localStorage.setItem("userAgreed", "true");
     setShowDisclaimer(false);
@@ -34,10 +41,11 @@ function App() {
         <Route path="/disclaimer" element={<Disclaimer />} />
       </Routes>
 
-      {/* Overlay disclaimer on top unless allowed path */}
-      {showDisclaimer && !isUnrestrictedPath && (
-        <DisclaimerPopup onAgree={handleAgree} />
-      )}
+     
+
+    {showDisclaimer && !isUnrestrictedPath && (
+      <DisclaimerPopup onAgree={handleAgree} onDisagree={handleDisagree} />
+    )}
     </div>
   );
 }
