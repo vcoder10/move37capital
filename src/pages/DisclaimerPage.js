@@ -7,8 +7,8 @@ const DisclaimerPage = () => {
   return (
     <div>
         <Navbar />
-    <Disclaimer />
-    <Footer />
+      <Disclaimer />
+      <Footer />
     </div>
   )
 }

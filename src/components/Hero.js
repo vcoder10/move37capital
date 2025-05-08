@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="relative h-[80vh] overflow-hidden">
+    <div className="p-32 relative h-[80vh] overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
