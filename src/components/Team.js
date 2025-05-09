@@ -26,10 +26,10 @@ const Team = () => {
         {teamMembers.map((member, index) => (
         <div
         key={index}
-        className="flex flex-col md:flex-row items-start md:items-stretch gap-6 p-4 border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+        className="flex flex-col lg:flex-row items-start md:items-stretch gap-6 p-4 border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
       >
         {/* Image Container */}
-        <div className="w-full md:w-1/3 h-80 bg-gray-200 rounded-2xl overflow-hidden">
+        <div className="w-full lg:w-1/3 h-80 bg-gray-200 rounded-2xl overflow-hidden">
           <img
             src={member.image}
             alt={member.name}
@@ -38,7 +38,7 @@ const Team = () => {
         </div>
       
         {/* Details Container */}
-        <div className="w-full md:w-2/3">
+        <div className="w-full lg:w-2/3">
           <h3 className="text-3xl font-semibold text-blue-800">{member.name}</h3>
           <p className="text-lg font-medium italic text-gray-600 mb-4">{member.role}</p>
           {member.bio.split('\n\n').map((paragraph, i) => (
