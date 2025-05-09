@@ -24,36 +24,37 @@ const Team = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12">
         {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="flex flex-col md:flex-row justify-between items-start p-4 border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+        <div
+        key={index}
+        className="flex flex-col md:flex-row items-start md:items-stretch gap-6 p-4 border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+      >
+        {/* Image Container */}
+        <div className="w-full md:w-1/3 h-80 bg-gray-200 rounded-2xl overflow-hidden">
+          <img
+            src={member.image}
+            alt={member.name}
+            className="object-cover w-full h-full"
+          />
+        </div>
+      
+        {/* Details Container */}
+        <div className="w-full md:w-2/3">
+          <h3 className="text-3xl font-semibold text-blue-800">{member.name}</h3>
+          <p className="text-lg font-medium italic text-gray-600 mb-4">{member.role}</p>
+          {member.bio.split('\n\n').map((paragraph, i) => (
+            <p key={i} className="text-gray-700 mb-4">{paragraph}</p>
+          ))}
+          <a
+            href={member.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-800 font-medium"
           >
-            {/* Image Container */}
-            <div className="w-full md:w-1/3 h-80 bg-gray-200 rounded-2xl overflow-hidden mb-4 md:mb-0">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            {/* Details Container */}
-            <div className="w-full md:w-2/3 p-6">
-              <h3 className="text-3xl font-semibold text-blue-800">{member.name}</h3>
-              <p className="text-lg font-medium italic text-gray-600 mb-4">{member.role}</p>
-              {member.bio.split('\n\n').map((paragraph, i) => (
-                <p key={i} className="text-gray-700 mb-4">{paragraph}</p>
-              ))}
-              <a
-                href={member.linkedIn}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-800 font-medium"
-              >
-                LinkedIn Profile
-              </a>
-            </div>
-          </div>
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+      
         ))}
       </div>
     </section>
