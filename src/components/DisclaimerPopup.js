@@ -46,7 +46,7 @@ const DisclaimerPopup = ({ onAgree }) => {
             </li>
             <li>
               Risks are inherent to investments and engaging in any investment activity may expose you to a significant
-              risk of losing all of the property or other assets invested.
+              risk of losing all of the assets invested.
             </li>
             <li>
               Please note that you are required to have read and accepted the terms of our{" "}

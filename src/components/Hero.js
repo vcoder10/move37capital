@@ -9,12 +9,12 @@ const Hero = () => {
         <img
           src="/images/image.png"
           alt="Background"
-          className="w-full h-full object-cover object-bottom brightness-120"
+          className="w-full h-full object-cover object-bottom "
         />
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-5 z-10"></div>
 
       {/* Hero content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
