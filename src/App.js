@@ -12,7 +12,7 @@ import CookiesPage from "./pages/CookiesPage";
 function App() {
   const location = useLocation();
   const isUnrestrictedPath =
-    location.pathname === "/privacy" || location.pathname === "/disclaimer";
+    location.pathname === "/privacy" || location.pathname === "/disclaimer" || location.pathname==="/cookies";
 
   const [showDisclaimer, setShowDisclaimer] = useState(() => {
     const agreed = localStorage.getItem("userAgreed");

@@ -9,7 +9,7 @@ const Hero = () => {
         <img
           src="/images/image.png"
           alt="Background"
-          className="w-full h-full object-cover object-bottom"
+          className="w-full h-full object-cover object-bottom brightness-120"
         />
       </div>
 
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
       <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-center relative inline-block text-white">
   A Fast Growing Asset Management Firm
-  <sup className="relative -top-2 sm:-top-3 md:-top-4 text-sm sm:text-base md:text-lg ml-1">*</sup>
+  <sup className="relative -top-2 sm:-top-3 md:-top-4 text-2xl sm:text-base md:text-3xl ml-1">*</sup>
 </h1>
 
         <p className="text-base sm:text-lg md:text-2xl mb-6">
