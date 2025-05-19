@@ -2,22 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  @media (max-width: 768px) and (orientation: landscape) {
-    .mobile-landscape {
-      font-size: 1rem; /* or use text-sm in Tailwind */
-    }
-
-    .mobile-landscape {
-      white-space: normal;
-      font-size: 0.875rem;
-    }
-
-    .mobile-landscape {
-      height: 100vh;
-      justify-content: flex-start;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-    }
-  }
-}
