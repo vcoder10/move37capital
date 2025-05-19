@@ -33,7 +33,7 @@ const Team = () => {
           <img
             src={member.image}
             alt={member.name}
-            className="object-cover w-full h-full"
+            className="object-cover object-top w-full h-full"
           />
         </div>
       
@@ -48,7 +48,7 @@ const Team = () => {
             href={member.linkedIn}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-800 font-medium"
+            className=" text-blue-500 hover:text-blue-800 font-medium"
           >
             LinkedIn Profile
           </a>
