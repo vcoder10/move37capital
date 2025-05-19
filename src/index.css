@@ -4,16 +4,16 @@
 
 @layer utilities {
   @media (max-width: 768px) and (orientation: landscape) {
-    .mobile-landscape-heading {
+    .mobile-landscape {
       font-size: 1rem; /* or use text-sm in Tailwind */
     }
 
-    .mobile-landscape-subtext {
+    .mobile-landscape {
       white-space: normal;
       font-size: 0.875rem;
     }
 
-    .mobile-landscape-hero {
+    .mobile-landscape {
       height: 100vh;
       justify-content: flex-start;
       padding-top: 2rem;
