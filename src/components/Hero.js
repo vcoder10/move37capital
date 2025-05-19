@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-0 z-10"></div>
 
       {/* Hero content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-blue-900 px-4 sm:px-6 md:px-8 lg:px-12 transform-none lg:transform lg:translate-x-[-62px] lg:translate-y-[-60px] landscapes:text-sm landscapes:transform landscapes:translate-x-[-70px] ">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-blue-900 px-4 sm:px-6 md:px-8 lg:px-12 transform-none lg:transform lg:translate-x-[-62px] lg:translate-y-[-60px] landscapes:text-sm landscapes:transform landscapes:translate-x-[-30px] ">
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[28px] font-semibold mb-3 leading-tight max-w-4xl landscapes:text-sm">
         A Fast Growing Asset Management Firm
@@ -30,7 +30,7 @@ const Hero = () => {
 
         <Link
           to="/contact"
-          className="bg-[#1b4460] text-white px-6 py-3 rounded-full font-medium hover:bg-[#122F43] transition text-sm sm:text-base landscapes:text-[6px]"
+          className="bg-[#1b4460] text-white px-6 py-3 rounded-full font-medium hover:bg-[#122F43] transition text-sm sm:text-base landscapes:text-[8px] landscapes:px-3 landscapes:py-1"
         >
           Get in Touch
         </Link>
