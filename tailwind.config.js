@@ -15,6 +15,10 @@ module.exports = {
           '100%': { opacity: 1, transform: 'translateX(0)' },
         },
       },
+      screens: {
+        'mobile-landscape': {
+          raw: '(max-width: 768px) and (orientation: landscape)',
+        },
       animation: {
         fadeInLeft: 'fadeInLeft 1s ease-out forwards',
         fadeInRight: 'fadeInRight 1s ease-out forwards',
@@ -22,8 +26,5 @@ module.exports = {
     },
   },
   plugins: [],
-  screens: {
-    'mobile-landscape': { 'raw': '(max-width: 768px) and (orientation: landscape)' },
-    // Keep your existing breakpoints (like sm, md, lg...)
-  }
+ 
 }
