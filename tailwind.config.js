@@ -22,4 +22,8 @@ module.exports = {
     },
   },
   plugins: [],
+  screens: {
+    'mobile-landscape': { 'raw': '(max-width: 768px) and (orientation: landscape)' },
+    // Keep your existing breakpoints (like sm, md, lg...)
+  }
 }
