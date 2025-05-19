@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@media (max-width: 768px) and (orientation: landscape) {
+@layer utilities {
+  @media (max-width: 768px) and (orientation: landscape) {
     .mobile-landscape-hero {
-      height: 100vh;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      @apply h-screen pt-8 pb-8 justify-start;
+      height: auto !important;
+      padding: 1rem 0 !important;
       justify-content: flex-start;
     }
-  
+
     .mobile-landscape-heading {
-      font-size: 1.25rem !important;
+      font-size: 1.25rem;
     }
-  
+
     .mobile-landscape-subtext {
-      white-space: normal !important;
+      white-space: normal;
     }
   }
+}
