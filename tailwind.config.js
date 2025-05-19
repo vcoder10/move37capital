@@ -5,27 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        fadeInLeft: {
-          '0%': { opacity: 0, transform: 'translateX(-50px)' },
-          '100%': { opacity: 1, transform: 'translateX(0)' },
-        },
-        fadeInRight: {
-          '0%': { opacity: 0, transform: 'translateX(50px)' },
-          '100%': { opacity: 1, transform: 'translateX(0)' },
-        },
-      },
-      screens: {
-        'mobile-landscape': {
-          raw: '(max-width: 768px) and (orientation: landscape)',
-        },
-      },
-      animation: {
-        fadeInLeft: 'fadeInLeft 1s ease-out forwards',
-        fadeInRight: 'fadeInRight 1s ease-out forwards',
-      },
-    },
-  },
+          screens: {
+            'landscapes': {
+                'raw': `only screen and (max-height: 600px) and (orientation: landscape)`
+            }
+        }
+    }
+},
   plugins: [],
+  
  
 }
