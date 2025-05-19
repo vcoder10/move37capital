@@ -3,43 +3,21 @@
 @tailwind utilities;
 
 @layer utilities {
-  /* Mobile Landscape Fix */
   @media (max-width: 768px) and (orientation: landscape) {
     .mobile-landscape-heading {
-      font-size: 1rem !important;
+      font-size: 1rem; /* or use text-sm in Tailwind */
     }
 
     .mobile-landscape-subtext {
-      font-size: 0.75rem !important;
-      white-space: normal !important;
-    }
-
-    .mobile-landscape-button {
-      font-size: 0.75rem !important;
-      padding: 0.5rem 1rem !important;
+      white-space: normal;
+      font-size: 0.875rem;
     }
 
     .mobile-landscape-hero {
-      height: 100vh !important;
-      justify-content: flex-start !important;
-      padding-top: 2rem !important;
-      padding-bottom: 2rem !important;
-    }
-  }
-
-  /* Desktop font sizes */
-  @media (min-width: 1024px) {
-    .desktop-heading {
-      font-size: 1.75rem; /* matches lg:text-[28px] */
-    }
-
-    .desktop-subtext {
-      font-size: 1.25rem; /* text-xl */
-    }
-
-    .desktop-button {
-      font-size: 1.125rem;
-      padding: 0.75rem 2rem;
+      height: 100vh;
+      justify-content: flex-start;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
   }
 }
