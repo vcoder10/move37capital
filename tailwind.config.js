@@ -19,6 +19,7 @@ module.exports = {
         'mobile-landscape': {
           raw: '(max-width: 768px) and (orientation: landscape)',
         },
+      },
       animation: {
         fadeInLeft: 'fadeInLeft 1s ease-out forwards',
         fadeInRight: 'fadeInRight 1s ease-out forwards',
